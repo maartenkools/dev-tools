@@ -5,15 +5,9 @@
   "rebaseWhen": "behind-base-branch",
   "packageRules": [
     {
-      "matchManagers": [
-        "nuget"
-      ],
-      "matchFileNames": [
-        "**/chocolatey.config"
-      ],
-      "registryUrls": [
-        "https://community.chocolatey.org/api/v2/"
-      ]
+      "matchManagers": ["nuget"],
+      "matchFileNames": ["**/packages.config"],
+      "registryUrls": ["https://community.chocolatey.org/api/v2/"]
     }
   ]
 }
