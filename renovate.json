@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "minimumReleaseAge": "3 days",
+  "rebaseWhen": "behind-base-branch",
+  "packageRules": [
+    {
+      "matchManagers": [
+        "nuget"
+      ],
+      "matchFileNames": [
+        "**/chocolatey.config"
+      ],
+      "registryUrls": [
+        "https://community.chocolatey.org/api/v2/"
+      ]
+    }
+  ]
+}
