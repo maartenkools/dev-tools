@@ -6,7 +6,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)packages\\.config$"],
+      "managerFilePatterns": [
+        "/(^|/)packages\\.config$/"
+      ],
       "matchStrings": [
         "<package\\s+id=\"(?<depName>[^\"]+)\"\\s+version=\"(?<currentValue>[^\"]+)\""
       ],
